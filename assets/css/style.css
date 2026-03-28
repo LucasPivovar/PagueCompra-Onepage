@@ -518,10 +518,11 @@ h2.section-title { font-size: 2.5rem; margin-bottom: 1rem; }
     .brand img { height: 36px !important; }
     
     .mobile-nav-modal {
-        display: none; position: fixed; top: 80px; left: 50%; transform: translateX(-50%); width: 90%; background: rgba(50,50,50,0.95); backdrop-filter: blur(10px); padding: 2rem; z-index: 99; flex-direction: column; gap: 1.5rem; text-align: center; border-radius: 12px;
+        display: flex; position: fixed; top: 0; right: 0; width: 280px; height: 100vh; background: rgba(17, 17, 17, 0.98); backdrop-filter: blur(15px); padding: 5rem 2rem; z-index: 1000; flex-direction: column; gap: 2rem; text-align: left; transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: -10px 0 30px rgba(0,0,0,0.5);
     }
-    .mobile-nav-modal.active { display: flex; }
-    .mobile-nav-modal a { color: #fff; font-size: 1.25rem; font-weight: 500; text-decoration: none; }
+    .mobile-nav-modal.active { transform: translateX(0); }
+    .mobile-nav-modal .close-menu { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 2.5rem; color: #fff; background: none; border: none; cursor: pointer; }
+    .mobile-nav-modal a { color: #fff; font-size: 1.25rem; font-weight: 500; text-decoration: none; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
     
     .hero { 
         padding: 8rem 0 2rem; 
