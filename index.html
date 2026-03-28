@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Segura | Pagamentos digitais com segurança</title>
+    <meta name="description" content="Gateway com API Pix, antifraude, funil de recuperação e suporte humano em tempo real. Tudo para garantir mais conversões.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Phosphor Icons para os ícones vetoriais modernos -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="brand">
+                <img src="assets/logo-header.png" alt="Compra Segura Logo" style="height: 46px;">
+            </div>
+            <nav class="nav-links">
+                <a href="#solucoes">Soluções</a>
+                <a href="#taxas">Taxas</a>
+                <a href="#suporte">Suporte</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-primary" style="font-weight: 500; border-radius: 6px;">Acessar Dashboard <i class="ph ph-arrow-up-right"></i></a>
+            </div>
+            <button class="mobile-menu-btn d-none-desktop" style="background: none; border: none; font-size: 2rem; color: #fff; display: none; cursor: pointer;" onclick="document.querySelector('.mobile-nav-modal').classList.toggle('active')">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Modal -->
+    <nav class="mobile-nav-modal">
+        <a href="#solucoes" onclick="document.querySelector('.mobile-nav-modal').classList.remove('active')">Soluções</a>
+        <a href="#taxas" onclick="document.querySelector('.mobile-nav-modal').classList.remove('active')">Taxas</a>
+        <a href="#suporte" onclick="document.querySelector('.mobile-nav-modal').classList.remove('active')">Suporte</a>
+        <a href="#" class="btn btn-primary" style="font-weight: 500; border-radius: 6px; width: 100%; box-sizing: border-box;">Acessar Dashboard</a>
+    </nav>
+
+    <main>
+        <!-- Sec 1: Hero -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge" style="background-color: #e6f6ee; color: #018647; margin-top: 1rem;"><i class="ph-fill ph-circle" style="font-size: 8px;"></i> COMPRA SEGURA</span>
+                    <h1 style="font-weight: 400; font-size: 4rem; line-height: 1.1; color: #111;"><span class="text-custom-green">Pagamentos digitais</span> <br>com estabilidade e<br> segurança real.</h1>
+                    <p style="font-weight: 400; color: #374151; font-size: 1.05rem; line-height: 1.5;">Gateway com API Pix, antifraude, funil de recuperação e suporte humano em tempo real. Tudo para garantir mais conversões e menos preocupações.</p>
+                    <a href="#" class="btn btn-primary btn-lg" style="font-weight: 400; border-radius: 6px;">Quero operar com segurança</a>
+                </div>
+                <!-- Grid spacer for image to overlay properly -->
+                <div class="hero-image-spacer" style="width: 100%;"></div>
+            </div>
+            
+            <!-- Absolute Positioning to exactly touch screen right edge -->
+            <img src="assets/mockuphero.png" alt="Dashboard da Compra Segura" style="position: absolute; right: 0; top: 60%; transform: translateY(-50%); width: 35%; max-width: 600px; z-index: 5;">
+        </section>
+
+        <!-- Sec 1.5: Integrations -->
+        <section class="integrations bg-light">
+            <div class="container">
+                <p class="text-center section-sub" style="font-weight: 400; margin-bottom: 3rem;">As melhores integrações para seu negócio:</p>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        <!-- Half 1 -->
+                        <img src="assets/carrosel1.png" alt="Utmify">
+                        <img src="assets/carrosel2.png" alt="Yampi">
+                        <img src="assets/carrosel3.png" alt="Wise Checkout">
+                        <img src="assets/carrosel4.png" alt="Shopify">
+                        <img src="assets/carrosel1.png" alt="Utmify">
+                        <img src="assets/carrosel2.png" alt="Yampi">
+                        <img src="assets/carrosel3.png" alt="Wise Checkout">
+                        <img src="assets/carrosel4.png" alt="Shopify">
+                        
+                        <!-- Half 2 -->
+                        <img src="assets/carrosel1.png" alt="Utmify">
+                        <img src="assets/carrosel2.png" alt="Yampi">
+                        <img src="assets/carrosel3.png" alt="Wise Checkout">
+                        <img src="assets/carrosel4.png" alt="Shopify">
+                        <img src="assets/carrosel1.png" alt="Utmify">
+                        <img src="assets/carrosel2.png" alt="Yampi">
+                        <img src="assets/carrosel3.png" alt="Wise Checkout">
+                        <img src="assets/carrosel4.png" alt="Shopify">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sec 2: Features -->
+        <section class="features" id="solucoes">
+            <div class="container text-center">
+                <h2 class="section-title" style="font-weight: 400; font-size: 3.5rem; line-height: 1.1;">Tecnologia de <span class="text-primary">pagamentos</span> pensada <br> <span class="text-primary">para o agora</span> e preparada para o<br> futuro.</h2>
+                <p class="section-desc mx-auto" style="font-weight: 400; font-size: 1.15rem;">Somos uma empresa especializada em soluções digitais para pagamentos.<br>Atuamos em todo o território nacional e internacional com foco em<br> <strong style="font-weight: 600;">estabilidade, automação e segurança.</strong></p>
+                <a href="#" class="btn btn-primary btn-mb text-center" style="font-weight: 400; border-radius: 6px;">Quero operar com segurança</a>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon-wrapper"><img src="assets/icone1.png" alt="Icon" style="width: 100%; height: auto;"></div>
+                        <h3>Gere link de pagamentos</h3>
+                        <p>É possível gerar links para receber pagamentos online de maneira fácil.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper"><img src="assets/icone2.png" alt="Icon" style="width: 100%; height: auto;"></div>
+                        <h3>Retentativa Automática</h3>
+                        <p>Temos um sistema de múltiplos adquirentes que aumenta a aprovação da sua compra.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper"><img src="assets/icone3.png" alt="Icon" style="width: 100%; height: auto;"></div>
+                        <h3>Saque rápido e previsível</h3>
+                        <p>Receba seus repasses de Pix no mesmo dia e de cartão em até D+2 — direto na conta.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper"><img src="assets/icone4.png" alt="Icon" style="width: 100%; height: auto;"></div>
+                        <h3>Controle total da operação</h3>
+                        <p>Acompanhe tudo com painéis completos: status, repasses, funil e análise antifraude.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper"><img src="assets/icone5.png" alt="Icon" style="width: 100%; height: auto;"></div>
+                        <h3>Antifraude inteligente</h3>
+                        <p>Camada de proteção automatizada que analisa cada transação em tempo real.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper"><img src="assets/icone6.png" alt="Icon" style="width: 100%; height: auto;"></div>
+                        <h3>Repasse instantâneo via Pix</h3>
+                        <p>Confirmação automática e liquidez no mesmo dia útil. Ideal para quem não pode esperar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sec 3: Performance -->
+        <section class="performance">
+            <div class="container performance-container" style="max-width: 1400px; gap: 6rem;">
+                <div class="performance-image image-rounded" style="display: flex; justify-content: flex-start;">
+                    <img src="assets/mockup--cliente.png" alt="Fluxo de aprovação" class="fluid-img border-radius-lg">
+                </div>
+                <div class="performance-content">
+                    <span class="badge" style="background-color: #e6f6ee; color: #018647; font-weight: 600; font-size: 0.75rem; padding: 4px 10px; margin-bottom: 2rem; border-radius: 5px;"><i class="ph-fill ph-circle" style="font-size: 8px;"></i> ALTA PERFOMANCE</span>
+                    <h2 class="section-title text-left" style="font-size: 3.5rem; font-weight: 400; line-height: 1.1;">Alta demanda? Nosso<br> <span class="text-custom-green">sistema aguenta.</span></h2>
+                    <p class="section-desc text-left">Projetado para negócios digitais com tráfego intenso. Cada transação é processada em multi-adquirência, latência mínima e máxima estabilidade, mesmo em picos. <strong class="text-custom-green" style="font-weight: 600;">Segurança de Verdade.</strong></p>
+                    
+                    <div class="performance-stats" style="display: flex; flex-direction: row; gap: 2rem;">
+                        <div class="stat-item" style="flex: 1;">
+                            <div class="stat-icon" style="background-color: #e6f6ee; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.347" height="25.333" fill="none" overflow="visible"><path d="M 10.667 1.333 L 6.4 1.333 C 4.16 1.333 3.04 1.333 2.184 1.769 C 1.431 2.153 0.819 2.765 0.436 3.517 C 0 4.373 0 5.493 0 7.733 L 0 18.933 C 0 21.174 0 22.294 0.436 23.149 C 0.819 23.902 1.431 24.514 2.184 24.897 C 3.04 25.333 4.16 25.333 6.4 25.333 L 17.6 25.333 C 19.84 25.333 20.96 25.333 21.816 24.897 C 22.569 24.514 23.18 23.902 23.564 23.149 C 24 22.294 24 21.174 24 18.933 L 24 14.667 M 12 8 L 17.333 8 L 17.333 13.333 M 16.667 2 L 16.667 0 M 21.919 3.414 L 23.333 2 M 23.347 8.667 L 25.347 8.667 M 0 15.13 C 0.869 15.264 1.76 15.333 2.667 15.333 C 8.515 15.333 13.687 12.437 16.826 8" fill="transparent" stroke-width="2" stroke="#018647" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </div>
+                            <h4 style="font-weight: 400; font-size: 1.25rem;">99% de Aprovação</h4>
+                            <p style="font-weight: 500; color: #7a828e; font-size: 0.95rem; line-height: 1.5;">Processamos pagamentos com altíssima taxa de sucesso, mesmo em grandes volumes. Menos recusas, mais receita no seu caixa.</p>
+                        </div>
+                        <div class="stat-item" style="flex: 1;">
+                            <div class="stat-icon" style="background-color: #018647; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.347" height="25.333" fill="none" overflow="visible"><path d="M 10.667 1.333 L 6.4 1.333 C 4.16 1.333 3.04 1.333 2.184 1.769 C 1.431 2.153 0.819 2.765 0.436 3.517 C 0 4.373 0 5.493 0 7.733 L 0 18.933 C 0 21.174 0 22.294 0.436 23.149 C 0.819 23.902 1.431 24.514 2.184 24.897 C 3.04 25.333 4.16 25.333 6.4 25.333 L 17.6 25.333 C 19.84 25.333 20.96 25.333 21.816 24.897 C 22.569 24.514 23.18 23.902 23.564 23.149 C 24 22.294 24 21.174 24 18.933 L 24 14.667 M 12 8 L 17.333 8 L 17.333 13.333 M 16.667 2 L 16.667 0 M 21.919 3.414 L 23.333 2 M 23.347 8.667 L 25.347 8.667 M 0 15.13 C 0.869 15.264 1.76 15.333 2.667 15.333 C 8.515 15.333 13.687 12.437 16.826 8" fill="transparent" stroke-width="2" stroke="rgb(255, 255, 255)" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </div>
+                            <h4 style="font-weight: 400; font-size: 1.25rem;">Proteção em tempo real</h4>
+                            <p style="font-weight: 500; color: #7a828e; font-size: 0.95rem; line-height: 1.5;">Cada pagamento é analisado. O sistema antifraude e anti chargebacks atua antes, durante e depois da tentativa de compra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sec 4: Categories -->
+        <section class="categories text-center">
+            <div class="container">
+                <h2 class="section-title">Feito para quem <span class="text-primary">vende no digital.</span></h2>
+                <p class="section-desc mx-auto">Atendemos quem precisa de performance, segurança e conversão real. Se você opera no digital, a nossa tecnologia foi feita pensando na sua realidade.</p>
+                
+                <div class="categories-grid mt-4">
+                    <div class="cat-card">
+                        <div class="cat-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=600&auto=format&fit=crop" alt="Infoprodutores Palestra">
+                        </div>
+                        <div class="cat-content">
+                            <h3>Infoprodutores</h3>
+                            <p>Para quem faz lançamentos e precisa de estabilidade em picos de tráfego e funil de recuperação automático.</p>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <div class="cat-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=600&auto=format&fit=crop" alt="Dropshipping">
+                        </div>
+                        <div class="cat-content">
+                            <h3>Dropshipping</h3>
+                            <p>Processamento rápido com Pix, boleto e funis ativados para não perder venda em nenhuma etapa.</p>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <div class="cat-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=600&auto=format&fit=crop" alt="Ecommerce">
+                        </div>
+                        <div class="cat-content">
+                            <h3>Ecommerce</h3>
+                            <p>Checkout ágil, integração fácil e antifraude em tempo real para escalar com segurança.</p>
+                        </div>
+                    </div>
+                    <div class="cat-card">
+                        <div class="cat-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop" alt="Saas">
+                        </div>
+                        <div class="cat-content">
+                            <h3>Saas</h3>
+                            <p>API Pix dedicada, painel completo e suporte técnico para integrar com controle total.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sec 5: Black Section / Recovery -->
+        <section class="dark-section recovery bg-black text-white">
+            <div class="container recovery-container" style="max-width: 1400px;">
+                <div class="recovery-content">
+                    <span class="badge" style="background-color: #ffffff; color: var(--primary); font-size: 0.75rem; padding: 4px 10px; margin-bottom: 2rem; border-radius: 5px;"><i class="ph-fill ph-circle" style="font-size: 8px;"></i> Recuperação Automática</span>
+                    <h2 class="section-title text-left" style="font-size: 3.5rem; font-weight: 400; line-height: 1.1;">Mais vendas, <span class="text-primary">menos <br>abandono.</span></h2>
+                    <p class="section-desc text-left text-white" style="color: #ffffff !important;">Automatize o reengajamento com clientes que não concluíram a compra. Nosso sistema envia mensagens por e-mail e WhatsApp em minutos, com links diretos para o checkout.</p>
+                    
+                    <div class="recovery-features">
+                        <div class="rec-feat" style="flex: 1;">
+                            <div class="rec-icon"><svg xmlns="http://www.w3.org/2000/svg" width="25.347" height="25.333" fill="none" overflow="visible"><path d="M 10.667 1.333 L 6.4 1.333 C 4.16 1.333 3.04 1.333 2.184 1.769 C 1.431 2.153 0.819 2.765 0.436 3.517 C 0 4.373 0 5.493 0 7.733 L 0 18.933 C 0 21.174 0 22.294 0.436 23.149 C 0.819 23.902 1.431 24.514 2.184 24.897 C 3.04 25.333 4.16 25.333 6.4 25.333 L 17.6 25.333 C 19.84 25.333 20.96 25.333 21.816 24.897 C 22.569 24.514 23.18 23.902 23.564 23.149 C 24 22.294 24 21.174 24 18.933 L 24 14.667 M 12 8 L 17.333 8 L 17.333 13.333 M 16.667 2 L 16.667 0 M 21.919 3.414 L 23.333 2 M 23.347 8.667 L 25.347 8.667 M 0 15.13 C 0.869 15.264 1.76 15.333 2.667 15.333 C 8.515 15.333 13.687 12.437 16.826 8" fill="transparent" stroke-width="2" stroke="rgb(255, 255, 255)" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""></path></svg></div>
+                            <h4>Recuperação por WhatsApp</h4>
+                            <p class="text-gray-light">Carrinho abandonado? A gente manda um ping. Envio automático de mensagens com link direto para o cliente finalizar a compra.</p>
+                        </div>
+                        <div class="rec-feat" style="flex: 1;">
+                            <div class="rec-icon"><svg xmlns="http://www.w3.org/2000/svg" width="25.347" height="25.333" fill="none" overflow="visible"><path d="M 10.667 1.333 L 6.4 1.333 C 4.16 1.333 3.04 1.333 2.184 1.769 C 1.431 2.153 0.819 2.765 0.436 3.517 C 0 4.373 0 5.493 0 7.733 L 0 18.933 C 0 21.174 0 22.294 0.436 23.149 C 0.819 23.902 1.431 24.514 2.184 24.897 C 3.04 25.333 4.16 25.333 6.4 25.333 L 17.6 25.333 C 19.84 25.333 20.96 25.333 21.816 24.897 C 22.569 24.514 23.18 23.902 23.564 23.149 C 24 22.294 24 21.174 24 18.933 L 24 14.667 M 12 8 L 17.333 8 L 17.333 13.333 M 16.667 2 L 16.667 0 M 21.919 3.414 L 23.333 2 M 23.347 8.667 L 25.347 8.667 M 0 15.13 C 0.869 15.264 1.76 15.333 2.667 15.333 C 8.515 15.333 13.687 12.437 16.826 8" fill="transparent" stroke-width="2" stroke="rgb(255, 255, 255)" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray=""></path></svg></div>
+                            <h4>Funil por e-mail inteligente</h4>
+                            <p class="text-gray-light">Vendas perdidas voltam em poucos cliques. E-mails automáticos ativados após a tentativa de compra. Com copy já pronta para conversão.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recovery-image" style="margin-top: 4rem; display: flex; justify-content: flex-end;">
+                    <img src="assets/wpp-mockup.png" alt="WhatsApp Mockup" class="mockup-img border-radius-lg" style="width: 100%; max-width: 500px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sec 6: Pricing -->
+        <section class="pricing text-center pt-5" id="taxas" style="background: linear-gradient(to bottom, #050505 0%, #00361c 100%);">
+            <div class="container pt-5">
+                <h2 class="section-title text-white" style="font-weight: 400; font-size: 3.5rem;">Você sabe o valor. E sabe quando<br> recebe.</h2>
+                <p class="section-desc mx-auto text-white" style="color: #ffffff !important; max-width: 800px; font-size: 1.15rem;">Com a Compra Segura, você sabe exatamente quanto vai pagar e quando vai receber. Sem mensalidades, sem tarifas escondidas e com repasse ágil.</p>
+                
+                <div class="pricing-main-card">
+                    <p class="pricing-subtitle">Taxa única por transação:</p>
+                    <h2 class="pricing-value text-custom-green" style="font-size: 3.5rem; font-weight: 400;">6,99% + R$ 1,50</h2>
+                    <p class="pricing-note">Taxas 100% negociáveis, variando de acordo com o<br>volume, segmento e modelo de operação.</p>
+                </div>
+                
+                <div class="pricing-methods">
+                    <div class="method-card">
+                        <i class="ph ph-pix-logo text-custom-green"></i>
+                        <h3 class="text-custom-green">Pix</h3>
+                        <p>Saque automático e na hora.</p>
+                    </div>
+                    <div class="method-card">
+                        <i class="ph ph-credit-card text-custom-green"></i>
+                        <h3 class="text-custom-green">Cartão de Crédito e Débito</h3>
+                        <p>Receba em até 2 dias</p>
+                    </div>
+                    <div class="method-card">
+                        <i class="ph ph-ticket text-custom-green"></i>
+                        <h3 class="text-custom-green">Boleto</h3>
+                        <p>Receba no dia seguinte</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sec 7: Checkout & Support -->
+        <section class="checkout-support">
+            <div class="container cs-grid" style="max-width: 1400px;">
+                <!-- Checkout row -->
+                <div class="cs-row">
+                    <div class="cs-image">
+                        <img src="assets/payment-mockup.png" alt="Checkout Personalizável" class="fluid-img border-radius-lg">
+                    </div>
+                    <div class="cs-content">
+                        <span class="badge" style="background-color: #e6f6ee; color: #018647; font-weight: 600; font-size: 0.75rem;"><i class="ph-fill ph-circle" style="font-size: 8px;"></i> Checkout Personalizavel</span>
+                        <h2 class="section-title text-left" style="font-weight: 400; font-size: 3.5rem;">Soluções de <span class="text-primary">Checkout feitas para performance.</span></h2>
+                        <p class="section-desc text-left" style="font-weight: 400; font-size: 1.15rem;">Personalize o layout, ative upsell com 1 clique, recupere vendas com funis automáticos e processe tudo com segurança antifraude, sem redirecionamentos e com máxima performance.</p>
+                    </div>
+                </div>
+
+                <!-- Support row -->
+                <div class="cs-row reverse" id="suporte">
+                    <div class="cs-content">
+                        <span class="badge" style="background-color: #e6f6ee; color: #018647; font-weight: 600; font-size: 0.75rem;"><i class="ph-fill ph-circle" style="font-size: 8px;"></i> Suporte 24/7</span>
+                        <h2 class="section-title text-left" style="font-weight: 400; font-size: 3.5rem;">Aqui você tem<br> <span class="text-primary">atendimento de verdade.</span></h2>
+                        <p class="section-desc text-left" style="font-weight: 400; font-size: 1.15rem; margin-bottom: 1rem;">Parceiros de verdade não somem quando você mais precisa. Por isso, nosso time de atendimento está sempre pronto para te apoiar da integração à operação, com resposta média de 2 minutos, por chat, e-mail ou chamado técnico.</p>
+                        <a href="#" class="btn btn-primary btn-sm" style="font-weight: 400;">Preciso de suporte</a>
+                    </div>
+                    <div class="cs-image">
+                        <img src="assets/pessoa-mockup.png" alt="Suporte" class="fluid-img border-radius-lg" style="transform: scale(1.15); transform-origin: top right;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sec 8: Recognition & FAQ -->
+        <section class="recognition-faq bg-black text-white">
+            <div class="container">
+                <!-- Recognition top row -->
+                <div class="rec-top-row">
+                    <h2 class="section-title text-left text-white">Reconhecimento que<br>se conquista com<br>entrega real.</h2>
+                    <div class="trust-badge-wrapper">
+                        <div class="trust-badge">
+                            <span class="trust-number">500+</span>
+                            <span class="trust-text">Players e Seller<br>Satisfeitos.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats cards -->
+                <div class="stats-cards">
+                    <div class="stat-box">
+                        <h3>R$ 11 Mi</h3>
+                        <p>Transacionados com segurança e estabilidade nos últimos meses.</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>97%</h3>
+                        <p>Taxa média nas transações aprovadas e protegidas por antifraude em tempo real.</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>+ 50 Mil</h3>
+                        <p>Pagamentos processados com alta performance e latência alta velocidade.</p>
+                    </div>
+                </div>
+                <p class="text-center text-primary mt-4" style="font-size: 14px;">Resultados baseado em apenas 3 meses de operações abertas.</p>
+
+                <!-- FAQ bottom row -->
+                <div class="faq-row text-center mt-5">
+                    <h2 class="section-title text-white">Tem uma dúvida?</h2>
+                    <p class="section-desc mx-auto text-gray-light" style="max-width: 400px; font-size: 16px;">Fale com um dos nossos gerentes que estão prontos para te atender da melhor forma.</p>
+                    <a href="#" class="btn btn-primary btn-sm mt-3">Gerente de vendas <i class="ph ph-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container" style="max-width: 1400px; gap: 6rem;">
+            <div class="footer-left">
+                <img src="assets/logo-footer.png" alt="Compra Segura Logo" style="max-height: 48px; margin-bottom: 2rem;">
+                <h3 class="footer-title" style="font-weight: 400; font-size: 2rem;">Vamos crescer seu negócio com segurança?</h3>
+                <p style="font-size: 1.15rem;">Converse com nosso time e descubra como escalar suas vendas com tecnologia, automação e suporte real.</p>
+                <a href="#" class="btn btn-primary btn-rounded mt-4" style="font-weight: 400;">Cadastrar agora <i class="ph ph-arrow-right"></i></a>
+            </div>
+            <div class="footer-right" style="line-height: 1.5; color: #6b7280; font-size: 0.95rem;">
+                <p>Compra Segura é uma empresa de tecnologia e pagamentos com atuação nacional e internacional, especializada em soluções digitais seguras, integradas e de alta performance para o comércio eletrônico. Atuamos com foco em segurança, automação, estabilidade e máxima conversão para vendedores digitais, e-commerces e infoprodutores.</p>
+                <p>Estamos regularmente constituídos sob o CNPJ 60.958.780/0001-09, com sede na Rua Julieta Lins, n° 205, Sala 01 - Pioneiros, Balneário Camboriú/SC - CEP 88331-140.</p>
+                <p>Todos os serviços oferecidos pela Compra Segura, incluindo o gateway de pagamento, checkout personalizado, API Pix, antifraude e funis de recuperação, são prestados com responsabilidade, segurança jurídica e total comprometimento com nossos parceiros e usuários.</p>
+                <p>As informações contidas neste site são exclusivamente informativas e não constituem qualquer tipo de recomendação, aconselhamento financeiro, jurídico ou garantia de rentabilidade. A Compra Segura preza pela ética, transparência e conformidade com a legislação vigente em todos os mercados onde atua.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
