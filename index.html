@@ -33,21 +33,23 @@
             </div>
             <button class="mobile-menu-btn d-none-desktop"
                 style="background: none; border: none; font-size: 2rem; color: #fff; display: none; cursor: pointer;"
-                onclick="document.querySelector('.mobile-nav-modal').classList.toggle('active')">
+                onclick="toggleMenu()">
                 <i class="ph ph-list"></i>
             </button>
         </div>
     </header>
 
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" onclick="toggleMenu()"></div>
+
     <!-- Mobile Navigation Modal -->
     <nav class="mobile-nav-modal">
-        <button class="close-menu" onclick="document.querySelector('.mobile-nav-modal').classList.remove('active')">&times;</button>
-        <a href="#solucoes"
-            onclick="document.querySelector('.mobile-nav-modal').classList.remove('active')">Soluções</a>
-        <a href="#taxas" onclick="document.querySelector('.mobile-nav-modal').classList.remove('active')">Taxas</a>
-        <a href="#suporte" onclick="document.querySelector('.mobile-nav-modal').classList.remove('active')">Suporte</a>
+        <button class="close-menu" onclick="toggleMenu()">&times;</button>
+        <a href="#solucoes" onclick="toggleMenu()">Soluções</a>
+        <a href="#taxas" onclick="toggleMenu()">Taxas</a>
+        <a href="#suporte" onclick="toggleMenu()">Suporte</a>
         <a href="#" class="btn btn-primary"
-            style="font-weight: 500; border-radius: 6px; width: 100%; box-sizing: border-box;">Acessar Dashboard</a>
+            style="font-weight: 500; border-radius: 6px; width: 100%; box-sizing: border-box; margin-top: auto;">Acessar Dashboard</a>
     </nav>
 
     <main>
@@ -477,6 +479,21 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const modal = document.querySelector('.mobile-nav-modal');
+            const overlay = document.querySelector('.mobile-nav-overlay');
+            modal.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (modal.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
 </body>
 
 </html>
