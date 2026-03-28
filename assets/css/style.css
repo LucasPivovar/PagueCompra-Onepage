@@ -130,17 +130,7 @@ h2.section-title { font-size: 2.5rem; margin-bottom: 1rem; }
     align-items: center;
     justify-content: space-between;
 }
-.mobile-nav-modal {
-    display: none !important;
-}
-@media (max-width: 768px) {
-    .mobile-nav-modal {
-        display: none !important; /* Overriden by .active */
-    }
-    .mobile-nav-modal.active {
-        display: flex !important;
-    }
-}
+.mobile-nav-modal { display: none; }
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -523,9 +513,12 @@ h2.section-title { font-size: 2.5rem; margin-bottom: 1rem; }
     .mobile-nav-overlay.active { opacity: 1; visibility: visible; }
     
     .mobile-nav-modal {
-        display: flex; position: fixed; top: 0; right: 0; width: 280px; height: 100vh; background: rgba(17, 17, 17, 0.98); backdrop-filter: blur(15px); padding: 5rem 2rem; z-index: 1000; flex-direction: column; gap: 1.5rem; text-align: left; transform: translateX(100%); transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+        display: flex; position: fixed; top: 0; right: 0; width: 280px; height: 100vh; background: rgba(17, 17, 17, 0.98); backdrop-filter: blur(15px); padding: 5rem 2rem; z-index: 1000; flex-direction: column; gap: 1.5rem; text-align: left; 
+        transform: translateX(100%); visibility: hidden; opacity: 0;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s; 
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
     }
-    .mobile-nav-modal.active { transform: translateX(0); }
+    .mobile-nav-modal.active { transform: translateX(0); visibility: visible; opacity: 1; }
     .mobile-nav-modal .close-menu { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 2.5rem; color: #fff; background: none; border: none; cursor: pointer; }
     .mobile-nav-modal a { color: #fff; font-size: 1.25rem; font-weight: 500; text-decoration: none; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
     
